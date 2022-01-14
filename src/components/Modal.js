@@ -3,13 +3,13 @@ import reactDom from "react-dom"
 import './Modal.css'
 
 export default function Modal({ setAdd, setShowModal }) {
-    const [id, setId] = useState('')
     const [task, setTask] = useState('')
     const [taskComplete, setTaskComplete] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault()
         setShowModal(false)
+        const id = Math.random() * 10 - 5
         const newTask = {
             "id": id,
             "title": task,
@@ -23,16 +23,6 @@ export default function Modal({ setAdd, setShowModal }) {
         <div className="modal-backdrop">
             <form onSubmit={(e) => handleSubmit(e)}>
                 <fieldset>
-                    <label>
-                        <input
-                            type="number"
-                            placeholder="Enter a unique ID (1-5)"
-                            min='1'
-                            max='5'
-                            onChange={(e) => setId(e.target.value)}
-                            value={id}
-                            required />
-                    </label>
                     <label>
                         <input
                             type="text"

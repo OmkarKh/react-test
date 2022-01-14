@@ -29,9 +29,9 @@ export default function Tasks({ setShowNav }) {
     }, [add])
 
     //Deleting tasks
-    const handleClick = (id) => {
+    const handleClick = (title) => {
         setTodos(prevTodos => {
-            return prevTodos.filter(todo => id !== todo.id)
+            return prevTodos.filter(todo => title !== todo.title)
         })
     }
 
@@ -49,10 +49,10 @@ export default function Tasks({ setShowNav }) {
                     {todos.filter((todo) => todo.id <= 5)
                         .map((todo) => (
                             <tr key={todo.id}>
-                                <td className="listid">{todo.id}</td>
+                                <td className="listid">{todos.indexOf(todo) + 1}</td>
                                 <td className="listtitle">{todo.title}</td>
                                 <td className="listcomp">{String(todo.completed)}</td>
-                                <td><button onClick={() => handleClick(todo.id)}>Delete</button></td>
+                                <td><button onClick={() => handleClick(todo.title)}>Delete</button></td>
                             </tr>
                         ))}
                 </tbody>
