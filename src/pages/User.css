@@ -1,0 +1,13 @@
+.userform form {
+    max-width: 700px;
+    max-height: 80vh;
+}
+.userform input {
+    max-width: 200px;
+}
+.userform .newpass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

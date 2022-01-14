@@ -1,0 +1,9 @@
+.tasks table {
+    margin: 30px auto;
+    font-size: 2rem;
+    max-width: 500px;
+}
+
+.tasks td {
+    text-align: center;
+}

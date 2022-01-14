@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 20px;
+    max-width: 1200;
+    min-width: 480px;
+    border-bottom: 1px solid #9b4dca;
+    background: rgb(155,77,202);
+    background: linear-gradient(270deg, rgba(155,77,202,1) 0%, rgba(236,215,248,1) 50%);
+    border-radius: 5px;
+}
+
+nav h1 {
+    font-weight: bolder;
+    margin-left: 3rem;
+}
+
+nav .links {
+    font-size: 2.5rem;
+    margin: 1.4rem;
+}
+
+nav .link {
+    padding: 2rem;
+    font-weight: 350;
+}
