@@ -11,7 +11,7 @@ export default function Tasks({ setShowNav }) {
         setShowNav(true)
     })
 
-    const url = process.env.REACT_APP_URL
+    const url = 'http://jsonplaceholder.typicode.com/todos'
 
     //Fetching data
     useEffect(() => {
