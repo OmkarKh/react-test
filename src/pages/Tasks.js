@@ -11,7 +11,7 @@ export default function Tasks({ setShowNav }) {
         setShowNav(true)
     })
 
-    const url = 'http://jsonplaceholder.typicode.com/todos'
+    const url = 'https://jsonplaceholder.typicode.com/todos'
 
     //Fetching data
     useEffect(() => {
