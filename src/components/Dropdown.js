@@ -10,10 +10,10 @@ export default function Dropdown({ setDvalue }) {
     return (
         <div className="dropdown">
             <select value={dropValue} onChange={(e) => setDropValue(e.target.value)}>
-                <option>RTX 3060</option>
-                <option>RTX 3060Ti</option>
-                <option>RX 6700XT</option>
-                <option>RTX 3070</option>
+                <option value='RTX 3060'>RTX 3060</option>
+                <option value='RTX 3060Ti'>RTX 3060Ti</option>
+                <option value='RX 6700XT'>RX 6700XT</option>
+                <option value='RTX 3070'>RTX 3070</option>
             </select>
         </div >
     )
